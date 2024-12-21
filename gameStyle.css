@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@800&display=swap');
+* {
+    font-family: 'Biryani', sans-serif;
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #4481eb, #04bedd);
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    color: white;
+    height: 56px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    line-height: 56px;
+    margin-bottom: 20px;
+}
+
+#time, #moves {
+    font-size: 16px;
+    margin: 0 20px;
+    display: inline-block;
+}
+
+table {
+    margin-top: 20px;
+    perspective: 1200px;
+    display: inline-block;
+    transform: translateY(0);
+}
+
+td {
+    background-color: transparent;
+    height: 100px;
+    width: 100px;
+}
+td, .inner, .front, .back {
+    border-radius: 8px;
+}
+
+#inst {
+    width: 85vw;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    margin-top: 16vh;
+    backdrop-filter: blur(10px);
+    border: 0.2px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+#inst li {
+    text-align: left;
+    padding: 10px;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    margin: 5px;
+    border: 0.1px solid #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#ol {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 200, 0.1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    animation: slideIn 0.6s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    perspective: 1000px;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.front {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.back {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: rotateY(180deg);
+}
+
+td:hover .inner {
+    transform: scale(1.05);
+}
