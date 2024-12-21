@@ -1,0 +1,66 @@
+1. Basic Understanding of the Game Logic
+
+	•	Goal: The core functionality of the game is to match pairs of identical items (emojis) on the game board. Players must flip over the cards to find matching pairs and complete the game by matching all pairs within a given time.
+
+2. HTML Structure and Basic Layout
+
+	•	Key Concepts:
+	•	Structuring the HTML layout for the game using elements like <div>, <table>, and <button> to create the user interface.
+	•	Using CSS for styling the layout and creating a grid to display the cards.
+	•	Managing responsiveness with resizing of the game board and layout using JavaScript (window.onresize).
+
+3. Event Handling
+
+	•	Key Concepts:
+	•	Handling user interactions, specifically clicks on the game blocks using the onclick attribute.
+	•	Implementing logic to flip the cards and compare them for matching.
+	•	Managing game flow through states (e.g., tracking turns, preventing duplicate clicks, and managing the matched pairs).
+
+4. Dynamic Table Creation
+
+	•	Key Concepts:
+	•	Dynamically generating the game board based on the selected grid size (e.g., 3x4, 4x4, etc.).
+	•	Looping through the number of rows and columns to append table rows and cells, with each cell containing a hidden emoji.
+
+5. Shuffling and Randomization
+
+	•	Key Concepts:
+	•	Randomizing the list of emojis to ensure that each game has a unique arrangement of items.
+	•	Using a randomization algorithm like the Fisher-Yates shuffle to shuffle the emojis before displaying them on the grid.
+	•	Ensuring that the shuffled items are evenly distributed and appear in random positions across the game board.
+
+6. Game State Management
+
+	•	Key Concepts:
+	•	Managing the state of the game, including tracking the number of moves made by the player, the time elapsed, and the number of unmatched pairs remaining.
+	•	Updating the user interface to reflect the current state, such as the number of moves and time taken.
+	•	Handling the win condition, where the game ends once all pairs are matched.
+
+7. Timers and Game Flow Control
+
+	•	Key Concepts:
+	•	Implementing a timer to track how long the player takes to complete the game.
+	•	Starting and stopping the timer as the game progresses.
+	•	Displaying the time taken to complete the game once all pairs are matched.
+	•	Providing feedback to the player, such as showing the total moves and time once the game is won.
+
+8. Handling Multiple Difficulty Levels
+
+	•	Key Concepts:
+	•	Allowing users to select different grid sizes (e.g., 3x4, 4x4, 5x6) based on their preferred difficulty level.
+	•	Dynamically adjusting the number of cards and the game logic based on the chosen grid size.
+	•	Ensuring that the randomization and matching logic works consistently across all grid sizes.
+
+9. User Interface Enhancements
+
+	•	Key Concepts:
+	•	Using smooth animations for card flipping and transitions between different game states (e.g., moving from the game screen to the “you won” screen).
+	•	Implementing CSS transitions and transformations (e.g., rotateY(180deg) for card flipping) to enhance the visual experience.
+	•	Providing visual feedback for matched pairs or flipped cards that are not a match.
+
+10. Refactoring and Code Optimization
+
+	•	Key Concepts:
+	•	Modularizing the code into functions to handle specific tasks, such as flipping cards, shuffling items, and managing the timer.
+	•	Ensuring efficient manipulation of the DOM to avoid performance issues, especially with larger grid sizes.
+	•	Structuring the code for maintainability and scalability, allowing future updates or enhancements to be easily incorporated.
