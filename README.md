@@ -8,3 +8,6 @@ A fun and interactive memory game designed to challenge and improve your memory 
 	•	Responsive Design: Optimized for desktop and mobile devices.
 	•	Interactive Animations: Engaging animations for an enhanced user experience.
 	•	Customizable Theme: Modern and visually appealing UI.
+
+
+Notes :- Comment button will be added soon !
