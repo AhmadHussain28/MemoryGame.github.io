@@ -10,4 +10,4 @@ A fun and interactive memory game designed to challenge and improve your memory 
 	•	Customizable Theme: Modern and visually appealing UI.
 
 
-Notes :- Comment button will be added soon !
+Notes :- Comment button will be added soon..!
